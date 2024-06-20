@@ -10,15 +10,15 @@ export const errorHandler = (err, req, res, next) => {
         return;
       }
 
-    // res.json({
-    //     status: 500,
-    //     message: 'Something went wrong',
-    //     data: err.message,
-    // });
-
     res.json({
-        status:404,
-        message: 'Contact not found',
+        status: 500,
+        message: 'Something went wrong',
         data: err.message,
-    })
+    });
+
+    // res.json({
+    //     status:404,
+    //     message: 'Contact not found',
+    //     data: err.message,
+    // })
   };
