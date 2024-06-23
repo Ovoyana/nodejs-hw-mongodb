@@ -30,7 +30,7 @@ router.post(
   ctrlWrapper(createContactsController),
 );
 
-router.patch('/contacts/:contactId', ctrlWrapper(patchContactsController));
+
 
 router.delete(
   '/contacts/:contactId',
