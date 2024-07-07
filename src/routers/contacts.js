@@ -33,7 +33,6 @@ contactsRouter.post(
   ctrlWrapper(createContactsController),
 );
 
-contactsRouter.patch('/:contactId', ctrlWrapper(patchContactsController));
 
 contactsRouter.delete(
   '/:contactId',
