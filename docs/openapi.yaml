@@ -12,9 +12,9 @@ tags:
   - name: Auth
     description: Auth operations.
 servers:
-  - url: "http://localhost:3000"
-  - url: "https://nodejs-hw-mongodb-4-a5t8.onrender.com"
-  paths:
+  - url: http://localhost:3000
+  - url: https://nodejs-hw-mongodb-4-a5t8.onrender.com
+paths:
   /contacts:
     get:
       $ref: '../swagger/paths/contacts/get.yaml'
@@ -43,4 +43,4 @@ components:
   securitySchemes:
     bearerAuth:
       type: http
-      scheme: bearer
+      scheme: beare
