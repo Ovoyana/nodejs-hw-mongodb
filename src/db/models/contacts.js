@@ -25,10 +25,10 @@ const contactsSchema = new Schema(
       default: 'personal',
     },
     userId: {
-      type: Schema.Types.ObjectId,
-      ref: 'users'
+      type: Schema.Types.ObjectId,ref: 'users', required: true },
+      photo: { type: String },
     },
-  },
+  
   {
     timestamps: true,
     versionKey: false,
